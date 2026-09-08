@@ -1,0 +1,6 @@
+usr/local/bin/termucash-qt usr/bin
+share/pixmaps/termucash32.xpm usr/share/pixmaps
+share/pixmaps/termucash16.xpm usr/share/pixmaps
+share/pixmaps/termucash128.png usr/share/pixmaps
+debian/termucash-qt.desktop usr/share/applications
+debian/termucash-qt.protocol usr/share/kde4/services/

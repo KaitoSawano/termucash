@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Termucash Core
+Comment=Connect to the Termucash P2P Network
+Comment[de]=Verbinde mit dem Termucash peer-to-peer Netzwerk
+Comment[fr]=Termucash, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Termucash, eşten eşe kriptografik sanal para birimi
+Exec=termucash-qt %u
+Terminal=false
+Type=Application
+Icon=termucash128
+MimeType=x-scheme-handler/termucash;
+Categories=Office;Finance;

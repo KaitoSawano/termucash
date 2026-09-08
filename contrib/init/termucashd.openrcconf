@@ -1,0 +1,33 @@
+# /etc/conf.d/termucashd: config file for /etc/init.d/termucashd
+
+# Config file location
+#TERMUCASHD_CONFIGFILE="/etc/termucash/termucash.conf"
+
+# What directory to write pidfile to?  (created and owned by $TERMUCASHD_USER)
+#TERMUCASHD_PIDDIR="/var/run/termucashd"
+
+# What filename to give the pidfile
+#TERMUCASHD_PIDFILE="${TERMUCASHD_PIDDIR}/termucashd.pid"
+
+# Where to write termucashd data (be mindful that the blockchain is large)
+#TERMUCASHD_DATADIR="/var/lib/termucashd"
+
+# User and group to own termucashd process
+#TERMUCASHD_USER="termucash"
+#TERMUCASHD_GROUP="termucash"
+
+# Path to termucashd executable
+#TERMUCASHD_BIN="/usr/bin/termucashd"
+
+# Nice value to run termucashd under
+#TERMUCASHD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+TERMUCASHD_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for termucashd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+TERMUCASHD_SIGTERM_TIMEOUT=60
