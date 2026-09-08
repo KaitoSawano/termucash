@@ -1,14 +1,14 @@
 *.tar.gz
 
 *.exe
-src/termucoin
-src/termucoind
-src/termucoin-cli
-src/termucoin-tx
-src/test/test_termucoin
-src/test/test_termucoin_fuzzy
-src/qt/test/test_termucoin-qt
-src/bench/bench_termucoin
+src/termucash
+src/termucashd
+src/termucash-cli
+src/termucash-tx
+src/test/test_termucash
+src/test/test_termucash_fuzzy
+src/qt/test/test_termucash-qt
+src/bench/bench_termucash
 
 # autoreconf
 Makefile.in
@@ -78,12 +78,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-termucoin-qt
+termucash-qt
 Bitcoin-Qt.app
 
 # Unit-tests
 Makefile.test
-termucoin-qt_test
+termucash-qt_test
 src/test/buildenv.py
 
 # Resources cpp
