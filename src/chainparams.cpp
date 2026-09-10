@@ -233,7 +233,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
 
         consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000540f2f62ff9a26"); // 5,900,000
-        consensus.defaultAssumeValid = uint256S("0x000003eed983bbaceb8c52db65ba23711549a5d05c27bd172b565b9242abc39f"); // 5,900,000
+        consensus.defaultAssumeValid = uint256S("0x00000e409c250e79e80ab4d548847c5b820c214e8c9955763f2254f685b8a817"); // 5,900,000
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x0024;
@@ -275,13 +275,13 @@ public:
         nDefaultPort = 12253;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1788866561, 306086, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1789040712, 135052, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         minDifficultyConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-        assert(consensus.hashGenesisBlock == uint256S("0x000003eed983bbaceb8c52db65ba23711549a5d05c27bd172b565b9242abc39f"));
-        assert(genesis.hashMerkleRoot == uint256S("0x196f88fe1aefe92b1583833202a43abed5d5bb3a3b724dda7a4c9f838992dd47"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000e409c250e79e80ab4d548847c5b820c214e8c9955763f2254f685b8a817"));
+        assert(genesis.hashMerkleRoot == uint256S("0x0135365529fdb2bf3360318823e2c5eefaacff616b4c8be0f15e229a6d7d5bc2"));
 
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
@@ -302,7 +302,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("0x000003eed983bbaceb8c52db65ba23711549a5d05c27bd172b565b9242abc39f"))
+            ( 0, uint256S("0x00000e409c250e79e80ab4d548847c5b820c214e8c9955763f2254f685b8a817"))
         };
 
         chainTxData = ChainTxData{
