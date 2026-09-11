@@ -228,7 +228,7 @@ BOOST_AUTO_TEST_CASE(util_ParseMoney)
 BOOST_AUTO_TEST_CASE(util_IsHex)
 {
     BOOST_CHECK(IsHex("00"));
-    BOOST_CHECK(IsHex("00112233122536778899aabbccddeeffAABBCCDDEEFF"));
+    BOOST_CHECK(IsHex("00112233445566778899aabbccddeeffAABBCCDDEEFF"));
     BOOST_CHECK(IsHex("ff"));
     BOOST_CHECK(IsHex("FF"));
 
@@ -238,6 +238,21 @@ BOOST_AUTO_TEST_CASE(util_IsHex)
     BOOST_CHECK(!IsHex("eleven"));
     BOOST_CHECK(!IsHex("00xx00"));
     BOOST_CHECK(!IsHex("0x0000"));
+}
+
+BOOST_AUTO_TEST_CASE(util_ToLower)
+{
+    // Locale-independent ASCII fold. std::tolower() is not: tolower('I') is
+    // 0x49 under tr_TR.UTF-8 (stays 'I') and 0xfd under tr_TR, not 0x69 ('i'),
+    // so "BASIC" would fail to match "basic". ToLower is constexpr and cannot
+    // consult a runtime locale, so ToLower('I') is always 0x69.
+    static_assert(ToLower('A') == 'a', "");
+    static_assert(ToLower('I') == 'i', "the Turkish-I case");
+    static_assert(ToLower('Z') == 'z', "");
+    static_assert(ToLower('a') == 'a', "");
+    static_assert(ToLower('i') == 'i', "");
+    static_assert(ToLower('5') == '5', "non-letters are unchanged");
+    BOOST_CHECK(ToLower('I') == 'i');
 }
 
 BOOST_AUTO_TEST_CASE(util_seed_insecure_rand)
