@@ -1,6 +1,6 @@
 <img align="right" width="120" height="80" src="share/pixmaps/nsis-header.bmp">
 <h1 align="center">
-<img src="https://raw.githubusercontent.com/termucash/termucash/master/share/pixmaps/termucash256.svg" alt="Termucash" width="256"/>
+<img src="https://raw.githubusercontent.com/KaitoSawano/termucash/master/share/pixmaps/termucash256.svg" alt="Termucash" width="256"/>
 <br/><br/>
 Termucash Core  
 </h1>
