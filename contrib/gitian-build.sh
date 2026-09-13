@@ -14,16 +14,16 @@ export USE_DOCKER=0
 export USE_LXC=0
 
 # Dependencies
-ossPatchUrl="https://depends.dogecoincore.org/osslsigncode-Backports-to-1.7.1.patch"
+ossPatchUrl="https://depends.termucashcore.org/osslsigncode-Backports-to-1.7.1.patch"
 ossPatchHash="a8c4e9cafba922f89de0df1f2152e7be286aba73f78505169bc351a7938dd911"
 
-ossTarUrl="https://depends.dogecoincore.org/osslsigncode_1.7.1.orig.tar.gz"
+ossTarUrl="https://depends.termucashcore.org/osslsigncode_1.7.1.orig.tar.gz"
 ossTarHash="f9a8cdb38b9c309326764ebc937cba1523a3a751a7ab05df3ecc99d18ae466c9"
 
-macosSdkUrl="https://depends.dogecoincore.org/MacOSX10.11.sdk.tar.gz"
+macosSdkUrl="https://depends.termucashcore.org/MacOSX10.11.sdk.tar.gz"
 macosSdkHash="bec9d089ebf2e2dd59b1a811a38ec78ebd5da18cbbcd6ab39d1e59f64ac5033f"
 
-liefUrl="https://depends.dogecoincore.org/lief-0.12.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+liefUrl="https://depends.termucashcore.org/lief-0.12.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
 liefHash="c848aadac0816268aeb9dde7cefdb54bf24f78e664a19e97e74c92d3be1bb147"
 
 # What to do
