@@ -4,11 +4,11 @@ about: Suggest an idea for this project
 title: '[feat] '
 ---
 
-<!-- Please make sure you are posting an technical issue related to Termucoin Core. --> 
+<!-- Please make sure you are posting an technical issue related to Termucash Core. --> 
 
-<!-- For general questions about Termucoin or wallet recovery please use one of the various communities:
+<!-- For general questions about Termucash or wallet recovery please use one of the various communities:
 * [termducation on reddit](https://www.reddit.com/r/termducation/)
-* [Discord](https://discord.com/invite/termucoin) -->
+* [Discord](https://discord.com/invite/termucash) -->
 
 <!-- ISSUES MISSING IMPORTANT INFORMATION MAY BE CLOSED WITHOUT INVESTIGATION. -->
 

@@ -4,11 +4,11 @@ about: Create a report to help us improve
 title: '[bug] '
 ---
 
-<!-- Please make sure you are posting an technical issue related to Termucoin Core. --> 
+<!-- Please make sure you are posting an technical issue related to Termucash Core. --> 
 
-<!-- For general questions about Termucoin or wallet recovery please use one of the various communities:
+<!-- For general questions about Termucash or wallet recovery please use one of the various communities:
 * [termducation on reddit](https://www.reddit.com/r/termducation/)
-* [Discord](https://discord.com/invite/termucoin) -->
+* [Discord](https://discord.com/invite/termucash) -->
 
 <!-- ISSUES MISSING IMPORTANT INFORMATION MAY BE CLOSED WITHOUT INVESTIGATION. -->
 
@@ -26,7 +26,7 @@ title: '[bug] '
 **Screenshots**
 <!-- If the issue is related to the GUI, screenshots can be added to this issue via drag & drop. -->
 
-**Termucoin Core version**
+**Termucash Core version**
 <!-- List the version number/commit ID, and if it is an official binary, self compiled or a distribution package such as PPA. -->
 
 **Machine specs**
